@@ -177,7 +177,7 @@ const App = () => {
               })
               Transforms.setNodes(
                 editor,
-                { type: match ? 'paragraph' : 'code' },
+                { type: match ? null : 'code' },
                 { match: n => Element.isElement(n) && Editor.isBlock(editor, n) }
               )
               break
